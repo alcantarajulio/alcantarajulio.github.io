@@ -1,6 +1,25 @@
 baseURL = 'https://alcantarajulio.github.io/'
 languageCode = 'en-us'
 title = 'JLI'
+theme = 'terminal'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[params]
+  contentTypeName = 'posts'
+
+[languages]
+  [languages.en]
+    title = 'JLI'
+    weight = 1
+
+    [languages.en.params.logo]
+      logoText = 'Terminal'
+      logoHomeLink = '/'
+
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
