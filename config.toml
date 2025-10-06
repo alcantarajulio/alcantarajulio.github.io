@@ -10,6 +10,8 @@ theme = 'terminal'
 
 [params]
   contentTypeName = 'posts'
+  fullWidthTheme = true 
+  centerTheme = false
 
 [languages]
   [languages.en]
@@ -17,7 +19,7 @@ theme = 'terminal'
     weight = 1
 
     [languages.en.params.logo]
-      logoText = 'Terminal'
+      logoText = 'Julio Alcantara'
       logoHomeLink = '/'
 
 [caches]
