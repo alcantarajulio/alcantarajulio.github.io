@@ -2,6 +2,8 @@ baseURL = 'https://alcantarajulio.github.io/'
 languageCode = 'en-us'
 title = 'JLI'
 theme = 'terminal'
+defaultContentLanguage = 'pt'
+defaultContentLanguageInSubdir = false
 
 [markup]
   [markup.goldmark]
@@ -10,17 +12,34 @@ theme = 'terminal'
 
 [params]
   contentTypeName = 'posts'
-  fullWidthTheme = true 
-  centerTheme = false
+  fullWidthTheme = false 
+  centerTheme = true
+  showLanguageSelector = true
 
 [languages]
-  [languages.en]
-    title = 'JLI'
+  [languages.pt]
+    languageName = 'PT-BR'
     weight = 1
-
-    [languages.en.params.logo]
+    title = 'Julio Alcantara'
+    contentDir = 'content/pt'
+    params.readMore = 'Continuar lendo'
+    params.menuMore = 'Mais'
+    params.readOtherPosts = 'Outros posts'
+    [languages.pt.params.logo]
       logoText = 'Julio Alcantara'
       logoHomeLink = '/'
+
+  [languages.en]
+    languageName = 'EN'
+    weight = 2
+    title = 'Julio Alcantara'
+    contentDir = 'content/en'
+    params.readMore = 'Read more'
+    params.menuMore = 'More'
+    params.readOtherPosts = 'Other posts'
+    [languages.en.params.logo]
+      logoText = 'Julio Alcantara'
+      logoHomeLink = '/en/'
 
 [caches]
   [caches.images]
