@@ -1,0 +1,28 @@
+{{ define "main" }}
+  {{ $hero := .Params.hero }}
+  {{ if $hero }}
+    <section class="home-hero">
+      <div class="home-hero__media">
+        {{ with $hero.photo }}
+          <img src="{{ . }}" alt="Foto de {{ $.Site.Params.authorName | default $.Site.Title }}" loading="lazy" />
+        {{ end }}
+      </div>
+      <div class="home-hero__body">
+        {{ with $hero.greeting }}<h1>{{ . | markdownify }}</h1>{{ end }}
+        {{ with $hero.subtitle }}<h2>{{ . | markdownify }}</h2>{{ end }}
+        {{ with $hero.summary }}<p>{{ . | markdownify }}</p>{{ end }}
+        {{ with $hero.actions }}
+          <div class="home-hero__actions">
+            {{ range . }}
+              <a class="button" href="{{ .url }}">{{ .label }}</a>
+            {{ end }}
+          </div>
+        {{ end }}
+      </div>
+    </section>
+  {{ end }}
+
+  <div class="home-content">
+    {{ .Content }}
+  </div>
+{{ end }}

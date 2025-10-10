@@ -1,0 +1,35 @@
+{{ $limit := or (.Get "limit") 4 }}
+{{ $sectionTitle := or (.Get "sectionTitle") (i18n "latestPosts") }}
+{{ $seeMore := .Get "seeMore" }}
+{{ $pages := where (where .Page.Site.RegularPages "Section" "posts") "Lang" .Page.Lang }}
+{{ if gt (len $pages) 0 }}
+<section class="home-posts">
+  <div class="home-posts__header">
+    <h2>{{ $sectionTitle }}</h2>
+    {{ with $seeMore }}
+      <a class="button inline" href="{{ . }}">{{ i18n "viewArchive" }}</a>
+    {{ end }}
+  </div>
+  <div class="home-posts__list">
+    {{ range first $limit $pages }}
+      <article class="home-post-card">
+        <header>
+          <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "02/01/2006" }}</time>
+        </header>
+        {{ if .Params.tags }}
+          <ul class="home-post-card__tags">
+            {{ range .Params.tags }}
+              <li><a href="{{ (printf "tags/%s/" (urlize .)) | relLangURL }}">#{{ . }}</a></li>
+            {{ end }}
+          </ul>
+        {{ end }}
+        <p>{{ with .Description }}{{ . | markdownify }}{{ else }}{{ .Summary }}{{ end }}</p>
+        <a class="button inline" href="{{ .RelPermalink }}">{{ i18n "readMore" }}</a>
+      </article>
+    {{ end }}
+  </div>
+</section>
+{{ else }}
+  <p class="home-posts__empty">{{ i18n "noPostsYet" }}</p>
+{{ end }}

@@ -1,0 +1,20 @@
+[featuredPosts]
+other = "Posts em destaque"
+
+[latestPosts]
+other = "Últimos posts"
+
+[viewArchive]
+other = "Ver arquivo completo"
+
+[noPostsYet]
+other = "Ainda não há posts publicados."
+
+[browseTags]
+other = "Explore pelas tags"
+
+[seeAllTags]
+other = "Ver todas as tags"
+
+[readMore]
+other = "Ler mais"

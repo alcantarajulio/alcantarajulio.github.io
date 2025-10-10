@@ -15,6 +15,7 @@ defaultContentLanguageInSubdir = false
   fullWidthTheme = false 
   centerTheme = true
   showLanguageSelector = true
+  authorName = 'Julio Alcantara'
 
 [languages]
   [languages.pt]
@@ -44,3 +45,60 @@ defaultContentLanguageInSubdir = false
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
+
+[[languages.pt.menu.main]]
+  name = 'Blog'
+  url  = '/blog/'
+  weight = 20
+
+  [[languages.pt.menu.main]]
+    parent = 'Blog'
+    name   = 'Todos os posts'
+    url    = '/posts/'
+    weight = 10
+
+  [[languages.pt.menu.main]]
+    parent = 'Blog'
+    name   = 'Tags'
+    url    = '/tags/'
+    weight = 20
+
+[[languages.en.menu.main]]
+  name  = 'Blog'
+  url   = '/en/blog/'
+  weight = 20
+
+  [[languages.en.menu.main]]
+    parent = 'Blog'
+    name   = 'All posts'
+    url    = '/en/posts/'
+    weight = 10
+
+  [[languages.en.menu.main]]
+    parent = 'Blog'
+    name   = 'Tags'
+    url    = '/en/tags/'
+    weight = 20
+
+[[languages.en.menu.main]]
+  name  = 'Blog'
+  url   = '/en/blog/'
+  weight = 20
+
+  [[languages.en.menu.main]]
+    parent = 'Blog'
+    name   = 'All posts'
+    url    = '/en/posts/'
+    weight = 10
+
+  [[languages.en.menu.main]]
+    parent = 'Blog'
+    name   = 'Series'
+    url    = '/en/categories/series/'
+    weight = 20
+
+  [[languages.en.menu.main]]
+    parent = 'Blog'
+    name   = 'Tags'
+    url    = '/en/tags/'
+    weight = 30

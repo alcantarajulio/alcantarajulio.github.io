@@ -1,0 +1,20 @@
+[featuredPosts]
+other = "Featured posts"
+
+[latestPosts]
+other = "Latest posts"
+
+[viewArchive]
+other = "View full archive"
+
+[noPostsYet]
+other = "No posts published yet."
+
+[browseTags]
+other = "Browse by tags"
+
+[seeAllTags]
+other = "See all tags"
+
+[readMore]
+other = "Read more"

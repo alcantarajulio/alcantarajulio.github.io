@@ -1,0 +1,150 @@
+.home-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 240px) minmax(0, 1fr);
+  gap: 2rem;
+  align-items: center;
+  padding: 2rem;
+  border: 1px solid color-mix(in srgb, var(--accent) 35%, transparent);
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--accent) 8%, transparent);
+  margin-bottom: 3rem;
+}
+
+.home-hero__media img {
+  width: 100%;
+  max-width: 240px;
+  border-radius: 12px;
+  border: 6px solid var(--accent);
+  display: block;
+}
+
+.home-hero__body h1 {
+  margin: 0 0 0.75rem;
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+}
+
+.home-hero__body h2 {
+  margin: 0 0 1rem;
+  font-size: clamp(1.3rem, 3vw, 1.6rem);
+  color: var(--accent);
+}
+
+.home-hero__body p {
+  margin: 0 0 1.5rem;
+  max-width: 70ch;
+}
+
+.home-hero__actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.home-content {
+  display: grid;
+  gap: 3rem;
+}
+
+.home-posts__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.home-posts__list {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.home-post-card {
+  border: 1px solid color-mix(in srgb, var(--accent) 25%, transparent);
+  border-radius: 10px;
+  padding: 1.5rem;
+  background: color-mix(in srgb, var(--accent) 5%, transparent);
+}
+
+.home-post-card header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.home-post-card h3 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.home-post-card time {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.home-post-card__tags {
+  list-style: none;
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin: 0 0 1rem;
+  padding: 0;
+}
+
+.home-post-card__tags a {
+  text-decoration: none;
+}
+
+.home-post-card p {
+  margin: 0 0 1rem;
+}
+
+.home-post-card .button.inline {
+  padding: 4px 14px;
+}
+
+@media (max-width: 720px) {
+  .home-hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .home-hero__media img {
+    margin: 0 auto;
+  }
+
+  .home-hero__actions {
+    justify-content: center;
+  }
+}
+
+.blog-header {
+  margin-bottom: 2.5rem;
+}
+
+.blog-title {
+  font-size: 2.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.blog-intro {
+  margin: 0;
+}
+
+.blog-section {
+  margin-bottom: 3rem;
+}
+
+.blog-section__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.blog-empty {
+  font-style: italic;
+}

@@ -1,0 +1,48 @@
+{{ define "main" }}
+  {{ $currentLang := .Lang }}
+  {{ $allPosts := where (where .Site.RegularPages "Section" "posts") "Lang" $currentLang }}
+  {{ $featured := where $allPosts "Params.featured" true }}
+
+  <section class="blog-header">
+    <h1 class="blog-title">{{ .Title }}</h1>
+    {{ with .Content }}
+      <div class="index-content blog-intro">
+        {{ . }}
+      </div>
+    {{ end }}
+  </section>
+
+  {{ if gt (len $featured) 0 }}
+    <section class="blog-section blog-featured">
+      <h2>{{ i18n "featuredPosts" }}</h2>
+      <div class="posts">
+        {{ range first 3 $featured }}
+          {{ partial "blog/on-list.html" . }}
+        {{ end }}
+      </div>
+    </section>
+  {{ end }}
+
+  <section class="blog-section blog-latest">
+    <div class="blog-section__header">
+      <h2>{{ i18n "latestPosts" }}</h2>
+      <a class="button inline" href="{{ "posts/" | relLangURL }}">{{ i18n "viewArchive" }}</a>
+    </div>
+    {{ if gt (len $allPosts) 0 }}
+      <div class="posts">
+        {{ range $allPosts }}
+          {{ partial "blog/on-list.html" . }}
+        {{ end }}
+      </div>
+    {{ else }}
+      <p class="blog-empty">{{ i18n "noPostsYet" }}</p>
+    {{ end }}
+  </section>
+
+  <section class="blog-section blog-tags">
+    <h2>{{ i18n "browseTags" }}</h2>
+    <p>
+      <a class="button inline" href="{{ "tags/" | relLangURL }}">{{ i18n "seeAllTags" }}</a>
+    </p>
+  </section>
+{{ end }}
