@@ -1,13 +1,19 @@
 ---
 title: "IT Security, Strategy and Management"
 translationKey: "psf-603"
-description: "A guide to IT strategy, risk management, and technology adoption."
+description: "A guide to risk, IT strategy and technology adoption, written from the perspective of whoever decides rather than whoever configures."
 weight: 20
 ---
 
-Placeholder. This guide follows the 603CIT module. Source material is thin: the module
-covered introduction, risk management, IT strategy, and strategic plans, so most of
-the writing starts from scratch.
+This guide follows the 603CIT module. It shifts altitude compared with the network
+security guide: nobody configures a router here, and the questions become where to
+invest, what to prioritise, and how to justify the decision to whoever controls the
+budget.
 
-Planned chapters: IT risk management, IT strategy and competitive advantage, strategic
-plans, and evaluating technology adoption.
+**Before you start.** The content is theoretical and needs no software. Each chapter
+closes with a practice section applying the framework to a case, and the module's
+supporting material remains the property of Coventry University, so none of it is
+reproduced here.
+
+Four chapters: IT risk management, strategy and competitive advantage, strategic plans,
+and evaluating technology adoption.
