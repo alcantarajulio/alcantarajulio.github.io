@@ -9,10 +9,10 @@ hero:
     Neste espaço você encontra meu currículo vivo, relatos técnicos e guias que mantenho atualizados.
   photo: "/images/profile.jpg"
   actions:
-    - label: "Baixar currículo"
-      url: "https://example.com/curriculo.pdf"
+    - label: "Currículo"
+      url: "/sobre/#curriculo"
     - label: "Falar comigo"
-      url: "mailto:contato@alcantarajulio.dev"
+      url: "mailto:julioalc21@gmail.com"
 ---
 
 {{< recent-posts sectionTitle="Últimos posts" seeMore="/blog/" >}}

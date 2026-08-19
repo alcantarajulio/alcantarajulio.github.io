@@ -20,6 +20,8 @@ defaultContentLanguageInSubdir = false
 [languages]
   [languages.pt]
     languageName = 'PT-BR'
+    languageCode = 'pt-BR'
+    locale = 'pt-BR'
     weight = 1
     title = 'Julio Alcantara'
     contentDir = 'content/pt'
@@ -32,6 +34,8 @@ defaultContentLanguageInSubdir = false
 
   [languages.en]
     languageName = 'EN'
+    languageCode = 'en-GB'
+    locale = 'en-GB'
     weight = 2
     title = 'Julio Alcantara'
     contentDir = 'content/en'
@@ -102,3 +106,23 @@ defaultContentLanguageInSubdir = false
     name   = 'Tags'
     url    = '/en/tags/'
     weight = 30
+
+[[languages.pt.menu.main]]
+  name   = 'Sobre'
+  url    = '/sobre/'
+  weight = 10
+
+[[languages.pt.menu.main]]
+  name   = 'Paraíba sem Fronteiras'
+  url    = '/paraiba-sem-fronteiras/'
+  weight = 15
+
+[[languages.en.menu.main]]
+  name   = 'About'
+  url    = '/en/about/'
+  weight = 10
+
+[[languages.en.menu.main]]
+  name   = 'Paraíba sem Fronteiras'
+  url    = '/en/paraiba-sem-fronteiras/'
+  weight = 15

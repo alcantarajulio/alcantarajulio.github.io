@@ -1,0 +1,36 @@
+{{ define "main" }}
+<article class="post">
+  {{ with .Params.chapter }}
+    <p class="chapter-kicker">{{ i18n "chapter" }} {{ . }}</p>
+  {{ end }}
+  <h1 class="post-title">
+    <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
+  </h1>
+  <div class="post-meta">
+    {{ with .Date }}
+      <time class="post-date" datetime="{{ .Format "2006-01-02" }}">{{ time.Format ":date_long" . }}</time>
+    {{ end }}
+    {{ with $.Site.Params.authorName }}<span class="post-author">{{ . }}</span>{{ end }}
+  </div>
+
+  {{ if .Params.tags }}
+    <span class="post-tags">
+      {{ range .Params.tags }}
+      #<a href="{{ (urlize (printf "tags/%s/" .)) | absLangURL }}">{{ . }}</a>&nbsp;
+      {{ end }}
+    </span>
+  {{ end }}
+
+  <div class="post-content">
+    {{- with .Content -}}
+      <div>
+        {{ . | replaceRE "(<h[1-9] id=\"([^\"]+)\".+)(</h[1-9]+>)" `${1}<a href="#${2}" class="hanchor" ariaLabel="Anchor">#</a> ${3}` | safeHTML }}
+      </div>
+    {{- end -}}
+  </div>
+
+  {{ with .CurrentSection }}
+    <p class="chapter-back"><a class="button inline" href="{{ .RelPermalink }}">{{ .Title }}</a></p>
+  {{ end }}
+</article>
+{{ end }}

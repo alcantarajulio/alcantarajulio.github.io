@@ -9,10 +9,10 @@ hero:
     This site hosts my living résumé, deep-dive guides, and field notes from day-to-day operations.
   photo: "/images/profile.jpg"
   actions:
-    - label: "Download résumé"
-      url: "https://example.com/resume.pdf"
+    - label: "Résumé"
+      url: "/en/about/#resume"
     - label: "Get in touch"
-      url: "mailto:contato@alcantarajulio.dev"
+      url: "mailto:julioalc21@gmail.com"
 ---
 
 {{< recent-posts sectionTitle="Latest posts" seeMore="/en/blog/" >}}

@@ -1,0 +1,18 @@
+{{ $p := . }}
+<ul class="menu menu--desktop menu--language-selector">
+  <li class="menu__trigger">{{ .Language.LanguageName }}&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      {{ range .Sites }}
+        {{ $lang := .Language }}
+        {{ $url := .Home.Permalink }}
+        {{ range $p.AllTranslations }}
+          {{ if eq .Language.Lang $lang.Lang }}
+            {{ $url = .Permalink }}
+          {{ end }}
+        {{ end }}
+        <li><a href="{{ $url }}">{{ $lang.LanguageName }}</a></li>
+      {{ end }}
+    </ul>
+  </li>
+</ul>
