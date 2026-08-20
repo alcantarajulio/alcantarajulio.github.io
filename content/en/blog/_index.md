@@ -5,6 +5,5 @@ description: "Articles, guides, and notes available in English."
 layout: "blog"
 ---
 
-Welcome to the blog. This page gathers every post I publish, from deep-dive guides to
-short field notes. Follow the shortcuts below to browse the full archive or jump straight
-to specific tags.
+Every post I publish lands here: long guides and short notes on what I ran into that
+week. The links below open the full archive or filter by tag.

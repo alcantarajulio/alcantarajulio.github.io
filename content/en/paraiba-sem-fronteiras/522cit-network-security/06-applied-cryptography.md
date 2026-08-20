@@ -12,11 +12,11 @@ Earlier chapters used cryptography without explaining it. SSH encrypts the sessi
 authenticates the adjacency with a digest, SNMPv3 protects the payload. This chapter
 opens the box, because the next one builds an entire VPN on top of it.
 
-## Three goals that get confused
+## Four goals that get confused
 
-Confidentiality stops anyone reading. Integrity lets you detect that someone altered.
-Authenticity proves who sent. Non-repudiation stops the sender denying they sent it
-afterwards.
+Confidentiality stops anyone reading the message. Integrity lets you detect that someone
+changed it. Authenticity proves who sent it. Non-repudiation stops the sender denying
+afterwards that they sent it.
 
 No single tool delivers all four, and picking the wrong one produces a system that looks
 secure. Encrypting without integrity checking lets an attacker modify the ciphertext

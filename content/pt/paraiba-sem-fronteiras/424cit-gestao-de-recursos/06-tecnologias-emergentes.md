@@ -88,7 +88,7 @@ não para transformar, com critério de parada declarado antes, como no capítul
 
 ## Na prática
 
-Escolha uma tecnologia que esteja em alta neste momento.
+Escolha uma tecnologia que esteja em alta agora.
 
 Escreva qual restrição ela remove, em uma frase, sem usar o nome da tecnologia.
 

@@ -1,7 +1,7 @@
 ---
 title: "Paraíba sem Fronteiras"
 translationKey: "psf"
-description: "Produto educacional da mobilidade: três guias práticos escritos a partir dos módulos cursados em Coventry."
+description: "Produto educacional da mobilidade: três guias escritos a partir dos módulos cursados em Coventry."
 ---
 
 Placeholder. Esta seção reúne o produto educacional desenvolvido como resultado da

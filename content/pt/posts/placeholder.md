@@ -7,5 +7,5 @@ draft: true
 tags: ["exemplo"]
 ---
 
-Placeholder. Serve de modelo de front matter e para conferir a renderização
-das listagens. Apague quando o primeiro post real entrar.
+Placeholder. Este é o modelo de front matter, e ele mostra como um post aparece nas
+listagens. Apague quando o primeiro post real entrar.

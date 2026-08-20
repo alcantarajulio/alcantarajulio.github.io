@@ -7,5 +7,5 @@ draft: true
 tags: ["sample"]
 ---
 
-Placeholder. Serves as a front matter template and a way to check listing
-rendering. Delete it once the first real post lands.
+Placeholder. This is the front matter template, and it shows how a post renders in the
+listings. Delete it once the first real post lands.

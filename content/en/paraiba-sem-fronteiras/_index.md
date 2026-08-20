@@ -1,7 +1,7 @@
 ---
 title: "Paraíba sem Fronteiras"
 translationKey: "psf"
-description: "The educational product built during the mobility: three practical guides written from the modules I took in Coventry."
+description: "The educational product built during the mobility: three guides written from the modules I took in Coventry."
 ---
 
 Placeholder. This section holds the educational product I committed to building as

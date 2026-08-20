@@ -12,7 +12,7 @@ Os capítulos anteriores usaram criptografia sem explicá-la. O SSH cifra a sess
 autentica a vizinhança com um resumo, o SNMPv3 protege o conteúdo. Este capítulo abre a
 caixa, porque o próximo constrói uma VPN inteira em cima dela.
 
-## Três objetivos que costumam ser confundidos
+## Quatro objetivos que costumam ser confundidos
 
 A confidencialidade impede que alguém leia. A integridade permite detectar que alguém
 alterou. A autenticidade prova quem enviou. O não repúdio impede que o remetente negue

@@ -5,6 +5,5 @@ description: "Todos os artigos, guias e relatos publicados em português."
 layout: "blog"
 ---
 
-Bem-vindo ao meu blog. Aqui ficam consolidados os posts do projeto, de guias práticos
-a relatos rápidos do que aprendi no dia a dia. Use os atalhos abaixo para navegar por
-todos os artigos ou explorar por tags.
+Tudo que eu publico fica aqui: guias longos e anotações curtas do que apareceu na
+semana. Os links abaixo abrem o arquivo completo ou filtram por tag.

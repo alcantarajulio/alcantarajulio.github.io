@@ -13,11 +13,10 @@ lugar, e uma seção prática no fim, com a configuração comentada em Cisco IO
 acompanhar a prática você precisa do **Cisco Packet Tracer**, que a Cisco distribui sem
 custo para quem se inscreve no Networking Academy. Os capítulos 6 e 8 pedem também uma
 máquina Linux com OpenSSL e Nmap, porque o simulador não implementa criptografia nem
-varredura. O guia não reproduz os arquivos de
-laboratório do curso, que continuam sendo material licenciado da Cisco e não podem ser
-redistribuídos aqui, e indica no fim de cada capítulo quais deles correspondem ao
-assunto.
+varredura. O guia não reproduz os arquivos de laboratório do curso, que continuam sendo
+material licenciado da Cisco e não podem ser redistribuídos aqui, e indica no fim de cada
+capítulo quais deles correspondem ao assunto.
 
 São oito capítulos: controle de acesso a dispositivos, hardening e monitoramento, AAA,
-filtragem de tráfego, prevenção de intrusão e defesa de endpoint, ataques de camada 2,
+filtragem de tráfego, prevenção de intrusão com defesa de endpoint e de camada 2,
 criptografia aplicada, VPNs site-to-site e teste de segurança.
